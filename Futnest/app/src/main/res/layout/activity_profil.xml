@@ -1,119 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EC714A"
     tools:context=".Profil">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="No Telepon:"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName12"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName13"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="Sosmed:"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName14"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="Alamat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/teal_700"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="43dp"
         android:text="Akun Ku"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="173dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="No Telepon"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName13"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Sosmed"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName14"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="Alamat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="366dp"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="139dp"
+        android:layout_height="188dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="376dp"
+        app:srcCompat="@drawable/foto" />
+
+</RelativeLayout>
