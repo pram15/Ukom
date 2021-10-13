@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home"
@@ -10,48 +11,53 @@
     tools:context=".Home">
 
     <androidx.cardview.widget.CardView
-        app:cardElevation="10dp"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="10dp"
-        app:cardBackgroundColor="#FFFF"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#FFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/Detail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_margin="10dp"
-                android:src="@drawable/logo"
+            <ImageButton
                 android:id="@+id/lapImage"
                 android:layout_width="120dp"
-                android:layout_height="150dp"/>
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo" />
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textTitle"
-                    android:textColor="#000"
-                    android:textStyle="bold"
-                    android:textSize="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Lapangan Panji"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textDesc"
-                    android:layout_margin="10dp"
-                    android:text="Lapangan Panji"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Lapangan Panji" />
 
 
             </LinearLayout>
@@ -60,4 +66,4 @@
 
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+</LinearLayout>

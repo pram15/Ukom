@@ -1,9 +1,11 @@
 package com.smkrevit.futnest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +17,10 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
 
     DataLapangan[] dataLapangans;
     Context context;
+
+
+
+
 
     public LapanganAdapter(DataLapangan[] dataLapangans,Home activity) {
         this.dataLapangans = dataLapangans;
@@ -38,10 +44,11 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
         holder.textDesc.setText(dataLapanganList.getDeskripsi());
         holder.lapImage.setImageResource(dataLapanganList.getImagelap());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.lapImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, dataLapanganList.getNamaLapangan(), Toast.LENGTH_SHORT).show();
+                 context.startActivity(new Intent(context,hal_detail.class));
             }
         });
 
@@ -54,7 +61,7 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView lapImage;
+        ImageButton lapImage;
         TextView textTitle;
         TextView textDesc;
 
@@ -65,6 +72,15 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
             textDesc = itemView.findViewById(R.id.textDesc);
 
         }
+
     }
 
+
+
+
+
+
+
+
 }
+

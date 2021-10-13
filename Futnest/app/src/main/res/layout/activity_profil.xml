@@ -15,7 +15,9 @@
         app:itemBackground="@color/teal_700"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
-        app:menu="@menu/menu_navigation" />
+        app:menu="@menu/menu_navigation" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
         android:id="@+id/textView4"
@@ -23,91 +25,101 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="43dp"
         android:text="Akun Ku"
         android:textSize="36sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="348dp"
-        android:layout_height="50dp"
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="33dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="310dp"
-        android:background="@drawable/rounded"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_marginBottom="340dp"
+        android:background="@drawable/input"
         android:paddingLeft="20dp"
-        android:text="Nama" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="348dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/bottom_navigation"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="244dp"
-        android:background="@drawable/rounded"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="Email" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName12"
-        android:layout_width="348dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/bottom_navigation"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="173dp"
-        android:background="@drawable/rounded"
-        android:ems="10"
-        android:hint="No Telepon"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName13"
-        android:layout_width="348dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/bottom_navigation"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="29dp"
-        android:background="@drawable/rounded"
-        android:ems="10"
-        android:hint="Sosmed"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp" />
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Nama"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName14"
-        android:layout_width="348dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="33dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="98dp"
-        android:background="@drawable/rounded"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/input"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="Alamat" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="227dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="No Telepon"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="283dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="106dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Sosmed"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -117,7 +129,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="366dp"
         app:srcCompat="@drawable/back" />
 
@@ -127,10 +139,23 @@
         android:layout_height="188dp"
         android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="137dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="376dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="406dp"
         app:srcCompat="@drawable/foto" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/rounded"
+        android:text="Simpan" />
 
 </RelativeLayout>

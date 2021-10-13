@@ -21,13 +21,13 @@ public class LoginAdmin extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnLoginAdmin();
+                btnAdminIsiData();
 
             }
         });
     }
 
-    public void btnLoginAdmin() {
+    public void btnAdminIsiData() {
         Intent intent = new Intent(LoginAdmin.this, IsiData.class);
         startActivity(intent);
     }

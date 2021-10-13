@@ -6,10 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class IsiData extends AppCompatActivity {
+
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,36 +21,19 @@ public class IsiData extends AppCompatActivity {
         setContentView(R.layout.activity_isi_data);
         getSupportActionBar().hide();
 
-        //Initialize And Assign Variable
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-        //Set Home Selected
-        bottomNavigationView.setSelectedItemId(R.id.tentang);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        button = (Button) findViewById(R.id.btnIsiData);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-                    case R.id.beranda:
-                        startActivity(new Intent(getApplicationContext()
-                                ,Home.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.profil:
-                        startActivity(new Intent(getApplicationContext()
-                                ,Profil.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.tentang:
-                        startActivity(new Intent(getApplicationContext()
-                                ,IsiData.class));
-                        overridePendingTransition(0,0);
-                        return true;
+            public void onClick(View v) {
+                btnIsiGambar();
 
-                }
-                return false;
             }
         });
+    }
+
+    public void btnIsiGambar() {
+        Intent intent = new Intent(IsiData.this, IsiGambar.class);
+        startActivity(intent);
     }
 
 
