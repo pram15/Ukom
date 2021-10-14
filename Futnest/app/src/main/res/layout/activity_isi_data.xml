@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/rounded"
         android:ems="10"
@@ -96,24 +96,41 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/rounded"
         android:ems="10"
-        android:hint="Jumlah Lapangan:"
+        android:hint="Jam Buka:"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Jumlah Lapangan:"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
     <Button
         android:id="@+id/btnIsiData"
         android:layout_width="137dp"
         android:layout_height="41dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded"
         android:text="Selanjutnya"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

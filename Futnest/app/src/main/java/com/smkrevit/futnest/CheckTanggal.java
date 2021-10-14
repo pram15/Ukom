@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.View;
@@ -18,6 +19,7 @@ public class CheckTanggal extends AppCompatActivity {
 
     EditText etTanggal;
     EditText etJam;
+    EditText etJam2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class CheckTanggal extends AppCompatActivity {
     public void load() {
         etTanggal = findViewById(R.id.etTanggal);
         etJam = findViewById(R.id.etJam);
+        etJam2 = findViewById(R.id.etJam2);
+
     }
 
     public void etTanggal(View view) {
@@ -55,10 +59,30 @@ public class CheckTanggal extends AppCompatActivity {
         TimePickerDialog tmp = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                etJam.setText(hourOfDay+"."+minute);
+                etJam.setText(hourOfDay+":"+minute);
             }
         },      jam.get(Calendar.HOUR_OF_DAY), jam.get(Calendar.MINUTE),
                 DateFormat.is24HourFormat(this));
         tmp.show();
+    }
+
+
+    public void etJam2(View view) {
+        Calendar jam2 = Calendar.getInstance();
+
+        TimePickerDialog tmp2 = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                etJam2.setText(hourOfDay + ":" + minute);
+            }
+        },
+                jam2.get(Calendar.HOUR_OF_DAY), jam2.get(Calendar.MINUTE),
+                DateFormat.is24HourFormat(this));
+        tmp2.show();
+    }
+
+    public void btnPeriksa(View view) {
+        Intent intent = new Intent(CheckTanggal.this, periksa.class);
+        startActivity(intent);
     }
 }

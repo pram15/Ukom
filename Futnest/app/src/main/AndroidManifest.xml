@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Futnest">
-        <activity android:name=".CheckTanggal"></activity>
+        <activity android:name=".InputDataPesanan"></activity>
+        <activity android:name=".periksa" />
+        <activity android:name=".CheckTanggal" />
         <activity android:name=".hal_detail" />
         <activity android:name=".IsiGambar" />
         <activity android:name=".splashscreen">
