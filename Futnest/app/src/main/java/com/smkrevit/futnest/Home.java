@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.smkrevit.futnest.Adapter.LapanganAdapter;
 
 public class Home extends AppCompatActivity {
 
@@ -39,18 +40,16 @@ public class Home extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.beranda:
-                        startActivity(new Intent(getApplicationContext()
-                                ,Home.class));
-                        overridePendingTransition(0,0);
+
                         return true;
                     case R.id.profil:
                         startActivity(new Intent(getApplicationContext()
                                 ,Profil.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.tentang:
+                    case R.id.riwayat:
                         startActivity(new Intent(getApplicationContext()
-                                ,IsiData.class));
+                                ,BuktiPemesanan.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

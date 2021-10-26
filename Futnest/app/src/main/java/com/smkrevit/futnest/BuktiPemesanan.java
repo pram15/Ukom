@@ -9,18 +9,19 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Navbar extends AppCompatActivity {
+public class BuktiPemesanan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navbar);
+        setContentView(R.layout.activity_bukti_pemesanan);
+        getSupportActionBar().hide();
 
         //Initialize And Assign Variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         //Set Home Selected
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.riwayat);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -28,7 +29,7 @@ public class Navbar extends AppCompatActivity {
                 switch (menuItem.getItemId()){
                     case R.id.beranda:
                         startActivity(new Intent(getApplicationContext()
-                        ,Home.class));
+                                ,Home.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.profil:
@@ -37,11 +38,8 @@ public class Navbar extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.riwayat:
-                        startActivity(new Intent(getApplicationContext()
-                                ,BuktiPemesanan.class));
-                        overridePendingTransition(0,0);
-                        return true;
 
+                        return true;
                 }
                 return false;
             }

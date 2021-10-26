@@ -34,13 +34,11 @@ public class Profil extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.profil:
-                        startActivity(new Intent(getApplicationContext()
-                                ,Profil.class));
-                        overridePendingTransition(0,0);
+
                         return true;
-                    case R.id.tentang:
+                    case R.id.riwayat:
                         startActivity(new Intent(getApplicationContext()
-                                ,IsiData.class));
+                                ,BuktiPemesanan.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
@@ -51,6 +49,16 @@ public class Profil extends AppCompatActivity {
 
     public void ivBack(View view) {
         Intent intent = new Intent(Profil.this, Home.class);
+        startActivity(intent);
+    }
+
+    public void btnLihatLapangan(View view) {
+        Intent intent = new Intent(Profil.this, LihatLapanganAdmin.class);
+        startActivity(intent);
+    }
+
+    public void btnLogout(View view) {
+        Intent intent = new Intent(Profil.this, MainActivity.class);
         startActivity(intent);
     }
 }

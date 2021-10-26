@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Futnest">
-        <activity android:name=".DetailUploadAdmin"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".LihatLapanganAdmin" />
+        <activity android:name=".BuktiPemesanan" />
+        <activity android:name=".DetailUploadAdmin" />
         <activity android:name=".InputDataPesanan" />
         <activity android:name=".periksa" />
         <activity android:name=".CheckTanggal" />

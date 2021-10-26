@@ -1,4 +1,4 @@
-package com.smkrevit.futnest;
+package com.smkrevit.futnest.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,23 +6,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.smkrevit.futnest.DataLapangan;
+import com.smkrevit.futnest.Home;
+import com.smkrevit.futnest.R;
+import com.smkrevit.futnest.hal_detail;
+
 public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHolder>{
 
     DataLapangan[] dataLapangans;
     Context context;
 
-
-
-
-
-    public LapanganAdapter(DataLapangan[] dataLapangans,Home activity) {
+    public LapanganAdapter(DataLapangan[] dataLapangans, Home activity) {
         this.dataLapangans = dataLapangans;
         this.context = activity;
     }
@@ -48,7 +48,7 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, dataLapanganList.getNamaLapangan(), Toast.LENGTH_SHORT).show();
-                 context.startActivity(new Intent(context,hal_detail.class));
+                 context.startActivity(new Intent(context, hal_detail.class));
             }
         });
 
