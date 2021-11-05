@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#ffaddf"
     tools:context=".LihatLapanganAdmin">
 
@@ -19,14 +19,13 @@
             android:orientation="vertical">
 
             <Spinner
-                android:id="@+id/spinner4"
+                android:id="@+id/spinnerLokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="24dp"
                 android:background="@drawable/rounded"
-                android:entries="@array/lokasi_lapangan"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp" />
@@ -47,12 +46,13 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName19"
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/spinnerJam"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
                 android:background="@drawable/rounded"
                 android:ems="10"
                 android:hint="Pilih Jam"
@@ -60,6 +60,31 @@
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerJamSampai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounded"
+                android:ems="10"
+                android:hint="Pilih Jam"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounded"
+                android:text="Lihat" />
 
             <TextView
                 android:id="@+id/textView27"
@@ -86,43 +111,23 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/rounded2"
-                android:text="Penuh" />
-
-            <TextView
-                android:id="@+id/textView41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:text="Lapangan B"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="313dp"
-                android:layout_height="220dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp"
-                app:srcCompat="@drawable/tiza" />
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="10dp"
                 android:background="@drawable/rounded3"
                 android:text="Kosong" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvPenyewa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/rounded"

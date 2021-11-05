@@ -49,7 +49,7 @@ public class Home extends AppCompatActivity {
                         return true;
                     case R.id.riwayat:
                         startActivity(new Intent(getApplicationContext()
-                                ,BuktiPemesanan.class));
+                                ,Riwayat_Pemesanan.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

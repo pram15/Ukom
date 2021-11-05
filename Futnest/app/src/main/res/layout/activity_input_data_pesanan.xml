@@ -30,7 +30,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/input"
+        android:background="@drawable/rounded"
         android:paddingStart="20dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"

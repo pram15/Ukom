@@ -1,6 +1,8 @@
 package com.smkrevit.futnest;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -8,19 +10,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 
+import com.smkrevit.futnest.Adapter.Periksa_Adapter;
+
 import java.sql.Time;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class CheckTanggal extends AppCompatActivity {
 
     EditText etTanggal;
-    EditText etJam;
-    EditText etJam2;
+    RecyclerView recyclerView;
+    Periksa_Adapter periksa_adapter;
+    List<M_Periksa> periksaList;
+    Spinner spinner, spinner2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +38,26 @@ public class CheckTanggal extends AppCompatActivity {
         setContentView(R.layout.activity_check_tanggal);
         getSupportActionBar().hide();
         load();
+        isiPeriksa();
+        isiSpinner();
+        isiSpinner2();
     }
 
     public void load() {
         etTanggal = findViewById(R.id.etTanggal);
+        spinner = findViewById(R.id.spinner);
+        spinner2 = findViewById(R.id.spinner2);
+        recyclerView = findViewById(R.id.rcvPeriksa);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
 
+    public void isiPeriksa(){
+        periksaList = new ArrayList<M_Periksa>();
+        periksaList.add(new M_Periksa("Lapangan A", "20-10-2021", "08.00-10.00"));
+        periksaList.add(new M_Periksa("Lapangan B", "20-10-2021", "08.00-10.00"));
+
+        periksa_adapter = new Periksa_Adapter(this, periksaList);
+        recyclerView.setAdapter(periksa_adapter);
     }
 
     public void etTanggal(View view) {
@@ -52,8 +77,23 @@ public class CheckTanggal extends AppCompatActivity {
         dtp.show();
     }
 
-    public void btnPeriksa(View view) {
-        Intent intent = new Intent(CheckTanggal.this, periksa.class);
-        startActivity(intent);
+    public void isiSpinner(){
+        String[] isi = {"08.00", "09.00", "10.00", "11.00", "12.00"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String >(this, android.R.layout.simple_spinner_item,isi);
+        spinner.setAdapter(adapter);
+    }
+
+    public void isiSpinner2(){
+        String[] isi = {"08.00", "09.00", "10.00", "11.00", "12.00"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String >(this, android.R.layout.simple_spinner_item,isi);
+        spinner2.setAdapter(adapter);
+    }
+
+    public void btnPeriksaTgl(View view) {
+        String pilihan = spinner.getSelectedItem().toString();
+        String pilihan2 = spinner2.getSelectedItem().toString();
+
+        System.out.println(pilihan);
+        System.out.println(pilihan2);
     }
 }

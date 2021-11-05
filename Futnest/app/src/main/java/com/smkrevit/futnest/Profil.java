@@ -38,7 +38,7 @@ public class Profil extends AppCompatActivity {
                         return true;
                     case R.id.riwayat:
                         startActivity(new Intent(getApplicationContext()
-                                ,BuktiPemesanan.class));
+                                ,Riwayat_Pemesanan.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
@@ -53,7 +53,7 @@ public class Profil extends AppCompatActivity {
     }
 
     public void btnLihatLapangan(View view) {
-        Intent intent = new Intent(Profil.this, LihatLapanganAdmin.class);
+        Intent intent = new Intent(Profil.this, Recycler_Lapangan_Admin.class);
         startActivity(intent);
     }
 

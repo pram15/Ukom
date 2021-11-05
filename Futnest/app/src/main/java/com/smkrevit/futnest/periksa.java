@@ -27,7 +27,6 @@ public class periksa extends AppCompatActivity {
     }
 
     public void btnGambarLapangan2(View view) {
-        Intent intent = new Intent(periksa.this, InputDataPesanan.class);
-        startActivity(intent);
+
     }
 }

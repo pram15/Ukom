@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,7 +45,7 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
         holder.textDesc.setText(dataLapanganList.getDeskripsi());
         holder.lapImage.setImageResource(dataLapanganList.getImagelap());
 
-        holder.lapImage.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, dataLapanganList.getNamaLapangan(), Toast.LENGTH_SHORT).show();
@@ -61,7 +62,7 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        ImageButton lapImage;
+        ImageView lapImage;
         TextView textTitle;
         TextView textDesc;
 

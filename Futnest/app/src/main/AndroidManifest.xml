@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Futnest">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Recycler_Lapangan_Admin"></activity>
+        <activity android:name=".Riwayat_Pemesanan" />
+        <activity android:name=".Register" />
         <activity android:name=".LihatLapanganAdmin" />
         <activity android:name=".BuktiPemesanan" />
         <activity android:name=".DetailUploadAdmin" />
@@ -31,7 +33,6 @@
         <activity android:name=".LoginAdmin" />
         <activity android:name=".LoginUser" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".CardView" />
     </application>
 
 </manifest>
