@@ -1,4 +1,4 @@
-package com.smkrevit.futnest;
+package com.smkrevit.futnest.Model;
 
 public class M_Periksa {
 

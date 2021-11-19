@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.smkrevit.futnest.Lapangan_Admin;
+import com.smkrevit.futnest.Model.Lapangan_Admin;
 import com.smkrevit.futnest.LihatLapanganAdmin;
 import com.smkrevit.futnest.R;
 

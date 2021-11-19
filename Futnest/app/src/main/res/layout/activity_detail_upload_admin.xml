@@ -46,7 +46,7 @@
                 android:text="Nama Lapangan" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvNamaLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -68,7 +68,7 @@
                 android:text="Alamat" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvAlamatLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -90,7 +90,7 @@
                 android:text="Jumlah Lapangan" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvJumlahLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -101,6 +101,28 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:text="2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Jumlah Lapangan" />
+
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="null"
                 android:textSize="18sp" />
 
             <TextView
@@ -134,7 +156,7 @@
                 android:text="Tipe Lapangan" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/tvTipeLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -156,7 +178,7 @@
                 android:text="Luas Lapangan" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/tvLuasLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -178,7 +200,7 @@
                 android:text="Detail Tambahan" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/tvDetailTambahan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

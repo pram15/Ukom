@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.smkrevit.futnest.Adapter.Penyewa_Adapter;
+import com.smkrevit.futnest.Model.Penyewa;
 
 import java.util.ArrayList;
 import java.util.Calendar;

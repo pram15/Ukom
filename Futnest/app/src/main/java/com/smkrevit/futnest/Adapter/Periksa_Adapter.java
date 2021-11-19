@@ -13,7 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.smkrevit.futnest.BuktiPemesanan;
-import com.smkrevit.futnest.M_Periksa;
+import com.smkrevit.futnest.Model.M_Periksa;
 import com.smkrevit.futnest.R;
 
 import java.util.List;

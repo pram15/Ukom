@@ -29,7 +29,7 @@
                 android:textSize="30sp" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imgLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="228dp"
                 android:layout_marginStart="16dp"
@@ -46,7 +46,7 @@
                 android:text="Nama Lapangan" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvNamaLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -55,6 +55,7 @@
                 android:background="@drawable/input"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
+                android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:text="Tiza "
                 android:textSize="18sp" />
@@ -68,7 +69,7 @@
                 android:text="Alamat" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvAlamatLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -77,6 +78,7 @@
                 android:background="@drawable/input"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
+                android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:text="Perumahan Puri indah "
                 android:textSize="18sp" />
@@ -90,7 +92,7 @@
                 android:text="Jumlah Lapangan" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvJumlahLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -104,6 +106,28 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Harga per-jam" />
+
+            <TextView
+                android:id="@+id/Harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textSize="18sp" />
+
+            <TextView
                 android:id="@+id/textView45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,7 +136,7 @@
                 android:text="Jam" />
 
             <TextView
-                android:id="@+id/textView46"
+                android:id="@+id/tvJamLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -134,7 +158,7 @@
                 android:text="Tipe Lapangan" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/tvTipeLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -156,7 +180,7 @@
                 android:text="Luas Lapangan" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/tvLuasLapangan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -178,7 +202,7 @@
                 android:text="Detail Tambahan" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/tvDetailTambahan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.smkrevit.futnest.R;
-import com.smkrevit.futnest.Penyewa;
+import com.smkrevit.futnest.Model.Penyewa;
 
 import java.util.List;
 

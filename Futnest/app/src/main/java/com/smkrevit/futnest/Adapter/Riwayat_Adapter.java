@@ -12,50 +12,60 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.smkrevit.futnest.BuktiPemesanan;
+import com.smkrevit.futnest.Model.DataLapangan;
 import com.smkrevit.futnest.R;
-import com.smkrevit.futnest.Riwayat;
+import com.smkrevit.futnest.Model.Riwayat;
 import com.smkrevit.futnest.hal_detail;
 
 import java.util.List;
 
 public class Riwayat_Adapter extends RecyclerView.Adapter<Riwayat_Adapter.ViewHolder>{
 
-    private Context context;
-    private List<Riwayat> RiwayatList;
+    private List<Riwayat> mOrderList;
+    Context context;
 
-    public Riwayat_Adapter(Context context, List<Riwayat> riwayatList) {
-        this.context = context;
-        this.RiwayatList = riwayatList;
+    public Riwayat_Adapter(List<Riwayat> OrderList) {
+        this.mOrderList = OrderList;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_list__riwayat, viewGroup, false);
-        return new ViewHolder(v);
+    public Riwayat_Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list__riwayat, parent, false);
+        ViewHolder viewHolder = new ViewHolder(view);
+
+        return viewHolder;
+
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        Riwayat riwayat = RiwayatList.get(i);
-
-        viewHolder.tvNama.setText(riwayat.getNama());
-        viewHolder.tvAlamat.setText(riwayat.getAlamat());
-        viewHolder.tvTanggal.setText(riwayat.getTanggal());
-        viewHolder.tvJam.setText(riwayat.getJam());
+        viewHolder.tvNama.setText(mOrderList.get(i).getNama());
+        viewHolder.tvAlamat.setText(mOrderList.get(i).getAlamat());
+        viewHolder.tvTanggal.setText(mOrderList.get(i).getTglorder());
+        viewHolder.tvJam.setText(mOrderList.get(i).getAlamat());
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, riwayat.getNama(), Toast.LENGTH_SHORT).show();
-                context.startActivity(new Intent(context, BuktiPemesanan.class));
+                Intent intent = new Intent(v.getContext(), BuktiPemesanan.class);
+                intent.putExtra("Nama",mOrderList.get(i).getNama());
+                intent.putExtra("NamaLapBukti",mOrderList.get(i).getTglorder());
+                intent.putExtra("NoTelpBukti",mOrderList.get(i).getNama());
+                intent.putExtra("tgldanjam",mOrderList.get(i).getAlamat());
+                intent.putExtra("TipeLapangan",mOrderList.get(i).getAlamat());
+                intent.putExtra("Alamat",mOrderList.get(i).getNama());
+                intent.putExtra("NoTelpPemilik",mOrderList.get(i).getTglorder());
+
+                v.getContext().startActivity(intent);
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return RiwayatList.size();
+        return mOrderList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -66,7 +76,7 @@ public class Riwayat_Adapter extends RecyclerView.Adapter<Riwayat_Adapter.ViewHo
             super(itemView);
 
             tvNama = itemView.findViewById(R.id.tvNama);
-            tvAlamat = itemView.findViewById(R.id.tvAlamat);
+            tvAlamat = itemView.findViewById(R.id.tvAlamatLapangan);
             tvTanggal = itemView.findViewById(R.id.tvTanggal);
             tvJam = itemView.findViewById(R.id.tvJam);
         }

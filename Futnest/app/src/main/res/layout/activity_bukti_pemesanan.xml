@@ -22,7 +22,7 @@
         android:id="@+id/textView32"
         android:layout_width="240dp"
         android:layout_height="46dp"
-        android:layout_above="@+id/textView33"
+        android:layout_above="@+id/tvNamaBukti"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="84dp"
@@ -34,10 +34,10 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/tvAlamatBukti"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView38"
+        android:layout_above="@+id/tvNoTelpPemilikBukti"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="43dp"
@@ -50,7 +50,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView38"
+        android:id="@+id/tvNoTelpPemilikBukti"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_above="@+id/textView40"
@@ -66,10 +66,10 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/tvTgldanJamBukti"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView36"
+        android:layout_above="@+id/tvPilLap"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="43dp"
@@ -82,10 +82,10 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView39"
+        android:id="@+id/tvNamaLapBukti"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView34"
+        android:layout_above="@+id/tvNoTelpBukti"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="45dp"
@@ -98,10 +98,10 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/tvNoTelpBukti"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView35"
+        android:layout_above="@+id/tvTgldanJamBukti"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="43dp"
@@ -130,10 +130,10 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/tvNamaBukti"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView39"
+        android:layout_above="@+id/tvNamaLapBukti"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="45dp"
@@ -146,10 +146,10 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/tvPilLap"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView37"
+        android:layout_above="@+id/tvAlamatBukti"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="43dp"
