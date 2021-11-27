@@ -32,11 +32,11 @@
         android:textSize="36sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView9"
+    <EditText
+        android:id="@+id/tvNamaProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView58"
+        android:layout_above="@+id/tvEmailProfil"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="33dp"
@@ -51,10 +51,10 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName14"
+        android:id="@+id/tvAlamatProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextTextPersonName13"
+        android:layout_above="@+id/tvSosmedProfil"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="33dp"
@@ -69,7 +69,7 @@
         android:text="Alamat" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName13"
+        android:id="@+id/tvSosmedProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button2"
@@ -100,10 +100,9 @@
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/tmgProfil"
         android:layout_width="139dp"
         android:layout_height="188dp"
-        android:layout_above="@+id/textView9"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -148,13 +147,13 @@
         android:layout_marginBottom="30dp"
         android:background="@drawable/rounded"
         android:onClick="btnLogout"
-        android:text="Logout" />
+        android:text="Login" />
 
-    <TextView
-        android:id="@+id/textView58"
+    <EditText
+        android:id="@+id/tvEmailProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView59"
+        android:layout_above="@+id/tvNoTelpProfil"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="33dp"
@@ -168,11 +167,11 @@
         android:textColor="#000000"
         android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView59"
+    <EditText
+        android:id="@+id/tvNoTelpProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextTextPersonName14"
+        android:layout_above="@+id/tvAlamatProfil"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="29dp"
@@ -183,7 +182,6 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="Nomer Telepon"
-        android:textColor="#000000"
         android:textSize="18sp" />
 
 </RelativeLayout>

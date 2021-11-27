@@ -43,7 +43,7 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder,final int position) {
       //  final DataLapangan dataLapanganList = dataLapangans[position];
         holder.textTitle.setText(mKontakList.get(position).getNamaLapangan());
-        holder.textDesc.setText(mKontakList.get(position).getAlamat());
+        holder.textDesc.setText(mKontakList.get(position).getAlamatLapangan());
         Glide.with(holder.itemView.getContext())
                 .load("" + mKontakList.get(position).getGambar())
                 .into(holder.lapImage);
@@ -54,13 +54,13 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), hal_detail.class);
                 intent.putExtra("Nama",mKontakList.get(position).getNamaLapangan());
-                intent.putExtra("Alamat",mKontakList.get(position).getAlamat());
-                intent.putExtra("Jumlah",mKontakList.get(position).getMenu());
+                intent.putExtra("Alamat",mKontakList.get(position).getAlamatLapangan());
+                intent.putExtra("Jumlah",mKontakList.get(position).getJumlahlapangan());
                 intent.putExtra("Jam",mKontakList.get(position).getJam());
                 intent.putExtra("Harga",mKontakList.get(position).getHarga());
-                intent.putExtra("TipeLapangan",mKontakList.get(position).getCreatedAt());
-                intent.putExtra("LuasLapangan",mKontakList.get(position).getUpdatedAt());
-                intent.putExtra("Detail",mKontakList.get(position).getCreatedAt());
+                intent.putExtra("TipeLapangan",mKontakList.get(position).getKategori());
+                intent.putExtra("LuasLapangan",mKontakList.get(position).getLuaslap());
+                intent.putExtra("Detail",mKontakList.get(position).getDetailLap());
                 intent.putExtra("gambar",mKontakList.get(position).getGambar());
 
                 v.getContext().startActivity(intent);

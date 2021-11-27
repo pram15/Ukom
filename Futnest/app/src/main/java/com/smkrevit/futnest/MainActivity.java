@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void btnRegister(View view) {
+    public void btnDaftar(View view) {
         Intent intent = new Intent(MainActivity.this, Register.class);
         startActivity(intent);
     }

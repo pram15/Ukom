@@ -42,21 +42,21 @@ public class Riwayat_Adapter extends RecyclerView.Adapter<Riwayat_Adapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         viewHolder.tvNama.setText(mOrderList.get(i).getNama());
-        viewHolder.tvAlamat.setText(mOrderList.get(i).getAlamat());
+        viewHolder.tvAlamat.setText(mOrderList.get(i).getAlamatLapangan());
         viewHolder.tvTanggal.setText(mOrderList.get(i).getTglorder());
-        viewHolder.tvJam.setText(mOrderList.get(i).getAlamat());
+        viewHolder.tvJam.setText(mOrderList.get(i).getNama());
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), BuktiPemesanan.class);
                 intent.putExtra("Nama",mOrderList.get(i).getNama());
-                intent.putExtra("NamaLapBukti",mOrderList.get(i).getTglorder());
-                intent.putExtra("NoTelpBukti",mOrderList.get(i).getNama());
-                intent.putExtra("tgldanjam",mOrderList.get(i).getAlamat());
-                intent.putExtra("TipeLapangan",mOrderList.get(i).getAlamat());
-                intent.putExtra("Alamat",mOrderList.get(i).getNama());
-                intent.putExtra("NoTelpPemilik",mOrderList.get(i).getTglorder());
+                intent.putExtra("NamaLapBukti",mOrderList.get(i).getNamaLapangan());
+//                intent.putExtra("NoTelpBukti",mOrderList.get(i).getNama());
+                intent.putExtra("tgldanjam",mOrderList.get(i).getJam());
+                intent.putExtra("TipeLapangan",mOrderList.get(i).getPilLap());
+                intent.putExtra("Alamat",mOrderList.get(i).getAlamatLapangan());
+                intent.putExtra("NoTelpPemilik",mOrderList.get(i).getNoTelpPemilik());
 
                 v.getContext().startActivity(intent);
             }

@@ -14,21 +14,30 @@ public class DataLapangan {
     @SerializedName("menu")
     @Expose
     private String menu;
+    @SerializedName("jumlahlapangan")
+    @Expose
+    private String jumlahlapangan;
+    @SerializedName("luaslap")
+    @Expose
+    private String luaslap;
     @SerializedName("jam")
     @Expose
     private String jam;
     @SerializedName("namaLapangan")
     @Expose
     private String namaLapangan;
-    @SerializedName("alamat")
+    @SerializedName("alamatLapangan")
     @Expose
-    private String alamat;
+    private String alamatLapangan;
     @SerializedName("gambar")
     @Expose
     private String gambar;
     @SerializedName("harga")
     @Expose
     private Integer harga;
+    @SerializedName("detailLap")
+    @Expose
+    private String detailLap;
     @SerializedName("created_at")
     @Expose
     private String createdAt;
@@ -63,6 +72,22 @@ public class DataLapangan {
         this.menu = menu;
     }
 
+    public String getJumlahlapangan() {
+        return jumlahlapangan;
+    }
+
+    public void setJumlahlapangan(String jumlahlapangan) {
+        this.jumlahlapangan = jumlahlapangan;
+    }
+
+    public String getLuaslap() {
+        return luaslap;
+    }
+
+    public void setLuaslap(String luaslap) {
+        this.luaslap = luaslap;
+    }
+
     public String getJam() {
         return jam;
     }
@@ -79,12 +104,12 @@ public class DataLapangan {
         this.namaLapangan = namaLapangan;
     }
 
-    public String getAlamat() {
-        return alamat;
+    public String getAlamatLapangan() {
+        return alamatLapangan;
     }
 
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
+    public void setAlamatLapangan(String alamatLapangan) {
+        this.alamatLapangan = alamatLapangan;
     }
 
     public String getGambar() {
@@ -101,6 +126,14 @@ public class DataLapangan {
 
     public void setHarga(Integer harga) {
         this.harga = harga;
+    }
+
+    public String getDetailLap() {
+        return detailLap;
+    }
+
+    public void setDetailLap(String detailLap) {
+        this.detailLap = detailLap;
     }
 
     public String getCreatedAt() {

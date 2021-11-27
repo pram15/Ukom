@@ -110,7 +110,7 @@ public class Riwayat_Pemesanan extends AppCompatActivity {
 //    }
 
     public void panggilRetrofit(){
-        Call<GetRiwayat> kontakCall = mApiInterface.getOrder();
+        Call<GetRiwayat> kontakCall = mApiInterface.getDetail();
         kontakCall.enqueue(new Callback<GetRiwayat>() {
             @Override
             public void onResponse(Call<GetRiwayat> call, Response<GetRiwayat>

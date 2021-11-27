@@ -39,7 +39,7 @@
                 android:textSize="14sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName9"
+                android:id="@+id/tvNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -62,7 +62,7 @@
                 android:text="Email" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName10"
+                android:id="@+id/tvEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -86,7 +86,7 @@
 
 
             <EditText
-                android:id="@+id/editTextTextPassword3"
+                android:id="@+id/tvPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -109,7 +109,7 @@
                 android:text="Nomer Telepon" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName16"
+                android:id="@+id/tvNoTelp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -132,7 +132,7 @@
                 android:text="Alamat" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/tvAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -146,7 +146,7 @@
                 android:paddingBottom="10dp" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnRegis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -155,6 +155,16 @@
                 android:background="@drawable/rounded"
                 android:onClick="btnRegister"
                 android:text="Register" />
+
+            <Button
+                android:id="@+id/btnCap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded"
+                android:text="Capctha" />
         </LinearLayout>
     </ScrollView>
 

@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.smkrevit.futnest">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Futnest">
-        <activity android:name=".Recycler_Lapangan_Admin"></activity>
+        <activity android:name=".LupaPasswordActivity"></activity>
+        <activity android:name=".Recycler_Lapangan_Admin" />
         <activity android:name=".Riwayat_Pemesanan" />
         <activity android:name=".Register" />
         <activity android:name=".LihatLapanganAdmin" />

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.smkrevit.futnest.Adapter.Lapangan_Admin_Adapter;
 import com.smkrevit.futnest.Model.Lapangan_Admin;
@@ -43,5 +45,10 @@ public class Recycler_Lapangan_Admin extends AppCompatActivity {
 
         lapangan_admin_adapter = new Lapangan_Admin_Adapter(this,lapangan_adminList);
         recyclerView.setAdapter(lapangan_admin_adapter);
+    }
+
+    public void btnTambahLapAdmin(View view) {
+        Intent intent = new Intent(Recycler_Lapangan_Admin.this, IsiData.class);
+        startActivity(intent);
     }
 }

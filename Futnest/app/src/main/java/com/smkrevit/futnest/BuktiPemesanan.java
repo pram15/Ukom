@@ -26,7 +26,7 @@ public class BuktiPemesanan extends AppCompatActivity {
         Intent intent = getIntent();
         tv1 = (TextView) findViewById(R.id.tvNamaBukti);
         tv2 = (TextView) findViewById(R.id.tvNamaLapBukti);
-        tv3 = (TextView) findViewById(R.id.tvNoTelpBukti);
+//        tv3 = (TextView) findViewById(R.id.tvNoTelpBukti);
         tv4 = (TextView) findViewById(R.id.tvTgldanJamBukti);
         tv5 = (TextView) findViewById(R.id.tvPilLap);
         tv6 = (TextView) findViewById(R.id.tvAlamatBukti);
@@ -34,7 +34,7 @@ public class BuktiPemesanan extends AppCompatActivity {
 
         tv1.setText(intent.getStringExtra("Nama"));
         tv2.setText(intent.getStringExtra("NamaLapBukti"));
-        tv3.setText(intent.getStringExtra("NoTelpBukti"));
+//        tv3.setText(intent.getStringExtra("NoTelpBukti"));
         tv4.setText(intent.getStringExtra("tgldanjam"));
         tv5.setText(intent.getStringExtra("TipeLapangan"));
         tv6.setText(intent.getStringExtra("Alamat"));

@@ -5,47 +5,77 @@ import com.google.gson.annotations.SerializedName;
 
 public class Riwayat {
 
+    @SerializedName("iddetail")
+    @Expose
+    private Integer iddetail;
     @SerializedName("idorder")
     @Expose
     private Integer idorder;
-    @SerializedName("idpelanggan")
-    @Expose
-    private Integer idpelanggan;
     @SerializedName("nama")
     @Expose
     private String nama;
-    @SerializedName("tglorder")
+    @SerializedName("NoTelpPemilik")
     @Expose
-    private String tglorder;
-    @SerializedName("total")
+    private String noTelpPemilik;
+    @SerializedName("idmenu")
     @Expose
-    private Integer total;
-    @SerializedName("bayar")
+    private Integer idmenu;
+    @SerializedName("jumlah")
     @Expose
-    private Integer bayar;
-    @SerializedName("kembali")
+    private Integer jumlah;
+    @SerializedName("hargajual")
     @Expose
-    private Integer kembali;
-    @SerializedName("status")
-    @Expose
-    private Integer status;
+    private Integer hargajual;
     @SerializedName("created_at")
     @Expose
     private String createdAt;
     @SerializedName("updated_at")
     @Expose
     private String updatedAt;
-    @SerializedName("pelanggan")
+    @SerializedName("tglorder")
     @Expose
-    private String pelanggan;
-    @SerializedName("alamat")
+    private String tglorder;
+    @SerializedName("idkategori")
     @Expose
-    private String alamat;
-    @SerializedName("telepon")
+    private Integer idkategori;
+    @SerializedName("menu")
     @Expose
-    private String telepon;
+    private String menu;
+    @SerializedName("jumlahlapangan")
+    @Expose
+    private String jumlahlapangan;
+    @SerializedName("luaslap")
+    @Expose
+    private String luaslap;
+    @SerializedName("jam")
+    @Expose
+    private String jam;
+    @SerializedName("namaLapangan")
+    @Expose
+    private String namaLapangan;
+    @SerializedName("pilLap")
+    @Expose
+    private String pilLap;
+    @SerializedName("alamatLapangan")
+    @Expose
+    private String alamatLapangan;
+    @SerializedName("gambar")
+    @Expose
+    private String gambar;
+    @SerializedName("harga")
+    @Expose
+    private Integer harga;
+    @SerializedName("detailLap")
+    @Expose
+    private String detailLap;
 
+    public Integer getIddetail() {
+        return iddetail;
+    }
 
+    public void setIddetail(Integer iddetail) {
+        this.iddetail = iddetail;
+    }
 
     public Integer getIdorder() {
         return idorder;
@@ -53,14 +83,6 @@ public class Riwayat {
 
     public void setIdorder(Integer idorder) {
         this.idorder = idorder;
-    }
-
-    public Integer getIdpelanggan() {
-        return idpelanggan;
-    }
-
-    public void setIdpelanggan(Integer idpelanggan) {
-        this.idpelanggan = idpelanggan;
     }
 
     public String getNama() {
@@ -71,44 +93,36 @@ public class Riwayat {
         this.nama = nama;
     }
 
-    public String getTglorder() {
-        return tglorder;
+    public String getNoTelpPemilik() {
+        return noTelpPemilik;
     }
 
-    public void setTglorder(String tglorder) {
-        this.tglorder = tglorder;
+    public void setNoTelpPemilik(String noTelpPemilik) {
+        this.noTelpPemilik = noTelpPemilik;
     }
 
-    public Integer getTotal() {
-        return total;
+    public Integer getIdmenu() {
+        return idmenu;
     }
 
-    public void setTotal(Integer total) {
-        this.total = total;
+    public void setIdmenu(Integer idmenu) {
+        this.idmenu = idmenu;
     }
 
-    public Integer getBayar() {
-        return bayar;
+    public Integer getJumlah() {
+        return jumlah;
     }
 
-    public void setBayar(Integer bayar) {
-        this.bayar = bayar;
+    public void setJumlah(Integer jumlah) {
+        this.jumlah = jumlah;
     }
 
-    public Integer getKembali() {
-        return kembali;
+    public Integer getHargajual() {
+        return hargajual;
     }
 
-    public void setKembali(Integer kembali) {
-        this.kembali = kembali;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setHargajual(Integer hargajual) {
+        this.hargajual = hargajual;
     }
 
     public String getCreatedAt() {
@@ -127,27 +141,100 @@ public class Riwayat {
         this.updatedAt = updatedAt;
     }
 
-    public String getPelanggan() {
-        return pelanggan;
+    public String getTglorder() {
+        return tglorder;
     }
 
-    public void setPelanggan(String pelanggan) {
-        this.pelanggan = pelanggan;
+    public void setTglorder(String tglorder) {
+        this.tglorder = tglorder;
     }
 
-    public String getAlamat() {
-        return alamat;
+    public Integer getIdkategori() {
+        return idkategori;
     }
 
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
+    public void setIdkategori(Integer idkategori) {
+        this.idkategori = idkategori;
     }
 
-    public String getTelepon() {
-        return telepon;
+    public String getMenu() {
+        return menu;
     }
 
-    public void setTelepon(String telepon) {
-        this.telepon = telepon;
+    public void setMenu(String menu) {
+        this.menu = menu;
     }
+
+    public String getJumlahlapangan() {
+        return jumlahlapangan;
+    }
+
+    public void setJumlahlapangan(String jumlahlapangan) {
+        this.jumlahlapangan = jumlahlapangan;
+    }
+
+    public String getLuaslap() {
+        return luaslap;
+    }
+
+    public void setLuaslap(String luaslap) {
+        this.luaslap = luaslap;
+    }
+
+    public String getJam() {
+        return jam;
+    }
+
+    public void setJam(String jam) {
+        this.jam = jam;
+    }
+
+    public String getNamaLapangan() {
+        return namaLapangan;
+    }
+
+    public void setNamaLapangan(String namaLapangan) {
+        this.namaLapangan = namaLapangan;
+    }
+
+    public String getPilLap() {
+        return pilLap;
+    }
+
+    public void setPilLap(String pilLap) {
+        this.pilLap = pilLap;
+    }
+
+    public String getAlamatLapangan() {
+        return alamatLapangan;
+    }
+
+    public void setAlamatLapangan(String alamatLapangan) {
+        this.alamatLapangan = alamatLapangan;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
+
+    public Integer getHarga() {
+        return harga;
+    }
+
+    public void setHarga(Integer harga) {
+        this.harga = harga;
+    }
+
+    public String getDetailLap() {
+        return detailLap;
+    }
+
+    public void setDetailLap(String detailLap) {
+        this.detailLap = detailLap;
+    }
+
 }
